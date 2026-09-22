@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Solicite um orçamento para seu projeto Web."
+    >
+
+    <title>Solicitar orçamento | WeByte Tech</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+    <link rel="icon" href="imagens/Logotipo/logotipo_webyte.png" type="image/x-icon" />
+</head>
+
+<body>
+
+    <div class="mouse-glow"></div>
+
+    <!-- Fundo tecnológico -->
+    <div
+        class="code-bg"
+        aria-hidden="true"
+    ></div>
+
+
+    <!-- Header -->
+    <header class="header">
+
+        <div class="container nav">
+
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="WeByte Tech"
+            >
+
+                <span class="brand-mark">
+                    &lt;/&gt;
+                </span>
+
+                <span>
+                    <span class="brand-blue">
+                        WeByte
+                    </span>
+
+                    <span class="brand-light">
+                        Tech
+                    </span>
+                </span>
+
+            </a>
+
+
+            <a
+                href="index.html"
+                class="back-link"
+            >
+                ← Voltar ao site
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- Conteúdo -->
+    <main>
+
+        <section class="budget-page">
+
+            <div class="container">
+
+                <div class="budget-header">
+
+                    <span class="budget-kicker">
+                        WEBYTE TECH
+                    </span>
+
+                    <h1>
+                        Solicitar
+                        <span>orçamento</span>
+                    </h1>
+
+                    <p>
+                        Conte um pouco sobre o seu projeto
+                        e vamos conversar sobre como podemos
+                        transformar sua ideia em uma solução Web.
+                    </p>
+
+                </div>
+
+
+                <!-- Formulário -->
+                <form
+                    class="budget-form-page"
+                    id="budget-form"
+                >
+
+                    <!-- Nome -->
+                    <div class="form-group">
+
+                        <label for="nome">
+                            Nome Completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Seu nome"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- E-mail -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="seuemail@exemplo.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Telefone -->
+                    <div class="form-group">
+
+                        <label for="telefone">
+                            Telefone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            placeholder="(XX) XXXXX-XXXX"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Empresa -->
+                    <div class="form-group">
+
+                        <label for="empresa">
+                            Nome da Empresa
+                            <span> (opcional)</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="empresa"
+                            name="empresa"
+                            placeholder="Nome da empresa"
+                        >
+
+                    </div>
+
+
+                    <!-- Projeto -->
+                    <div class="form-group">
+
+                        <label for="projeto">
+                            Projeto Web
+                        </label>
+
+                        <input
+                            type="text"
+                            id="projeto"
+                            name="projeto"
+                            placeholder="Ex.: Site institucional, e-commerce, blog..."
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Descrição -->
+                    <div class="form-group">
+
+                        <label for="descricao">
+                            Descreva o projeto
+                        </label>
+
+                        <textarea
+                            id="descricao"
+                            name="descricao"
+                            rows="6"
+                            placeholder="Conte-me com detalhes sobre sua ideia, objetivos, público-alvo e qualquer informação relevante."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Referências -->
+                    <div class="form-group">
+
+                        <label for="referencias">
+                            Referências
+                        </label>
+
+                        <textarea
+                            id="referencias"
+                            name="referencias"
+                            rows="4"
+                            placeholder="Links ou sites que você gostaria de usar como referência."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Funcionalidades -->
+                    <div class="form-group">
+
+                        <label for="funcionalidades">
+                            Funcionalidades desejadas
+                        </label>
+
+                        <textarea
+                            id="funcionalidades"
+                            name="funcionalidades"
+                            rows="5"
+                            placeholder="Ex.: login, cadastro, pagamentos, painel administrativo..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Botão -->
+                    <div class="form-submit-page">
+
+                        <button
+                            type="submit"
+                            class="budget-button"
+                        >
+                            Enviar solicitação
+                            <span>→</span>
+                        </button>
+
+                    </div>
+
+
+                    <p
+                        id="form-message"
+                        class="form-message"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <div>
+
+                <div class="footer-brand">
+                    <span>WeByte</span> Tech
+                </div>
+
+                <div class="footer-text">
+                    Transformando ideias em experiências Web.
+                </div>
+
+            </div>
+
+
+            <div class="copyright">
+                © 2026 WeByte Tech.
+                Todos os direitos reservados.
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script
+        src="js/script.js"
+        defer
+    ></script>
+
+</body>
+
+</html>
