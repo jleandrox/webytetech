@@ -3203,3 +3203,139 @@ main {
 .brand-mark {
     color: var(--white) !important;
 }
+
+/* =========================================
+   FUNDO ILUMINADO - WEByte Tech
+========================================= */
+
+.code-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(0, 157, 255, 0.16),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 35%,
+            rgba(0, 157, 255, 0.12),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(0, 157, 255, 0.10),
+            transparent 32%
+        ),
+        #030507;
+}
+
+/* Luz ambiente esquerda */
+.code-bg::before {
+    content: "";
+    position: absolute;
+
+    width: 650px;
+    height: 650px;
+
+    top: -180px;
+    left: -180px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 157, 255, 0.18) 0%,
+            rgba(0, 157, 255, 0.08) 30%,
+            transparent 70%
+        );
+
+    filter: blur(45px);
+
+    animation: ambient-left 9s ease-in-out infinite alternate;
+
+    z-index: 1;
+}
+
+/* Luz ambiente direita */
+.code-bg::after {
+    content: "";
+    position: absolute;
+
+    width: 700px;
+    height: 700px;
+
+    right: -220px;
+    bottom: -220px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 157, 255, 0.15) 0%,
+            rgba(0, 157, 255, 0.07) 32%,
+            transparent 72%
+        );
+
+    filter: blur(50px);
+
+    animation: ambient-right 11s ease-in-out infinite alternate;
+
+    z-index: 1;
+}
+
+#tech-background {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    z-index: 2;
+}
+
+/* =========================================
+   ANIMAÇÃO DAS LUZES
+========================================= */
+
+@keyframes ambient-left {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.65;
+    }
+
+    50% {
+        transform: translate(100px, 80px) scale(1.08);
+        opacity: 0.85;
+    }
+
+    100% {
+        transform: translate(40px, 150px) scale(1.15);
+        opacity: 0.7;
+    }
+}
+
+@keyframes ambient-right {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.55;
+    }
+
+    50% {
+        transform: translate(-90px, -80px) scale(1.1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translate(-40px, -140px) scale(1.16);
+        opacity: 0.65;
+    }
+}
